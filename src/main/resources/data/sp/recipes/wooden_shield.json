@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "sp:wooden_shield"
+  }
+}

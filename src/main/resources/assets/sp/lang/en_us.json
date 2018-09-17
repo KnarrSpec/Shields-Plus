@@ -1,0 +1,10 @@
+{
+  "item.sp.wooden_shield":"Wooden Shield",
+  "item.sp.stone_shield":"Stone Shield",
+  "item.sp.iron_shield":"Iron Shield",
+  "item.sp.gold_shield":"Gold Shield",
+  "item.sp.diamond_shield":"Diamond Shield",
+
+  "enchantment.sp.absorption":"Absorption",
+  "enchantment.sp.reflection":"Reflection"
+}

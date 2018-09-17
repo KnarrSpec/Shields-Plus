@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.7.7",
+  "compatibilityLevel": "JAVA_8",
+  "target": "@env(DEFAULT)",
+  "package": "org.knarr.sp.mixin",
+  "refmap": "mixins.sp.refmap.json",
+  "client": [
+    "client.MixinShieldRenderer",
+    "client.MixinShieldDamage",
+    "client.MixinShieldEnchants",
+    "client.MixinShieldRecipe"
+  ]
+}

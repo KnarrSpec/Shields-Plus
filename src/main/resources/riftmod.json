@@ -1,0 +1,12 @@
+{
+  "id": "sp",
+  "name": "Shields Plus",
+  "authors": [
+    "KnarrSpec"
+  ],
+  "listeners": [
+    "org.knarr.sp.listener.SPInit",
+    "org.knarr.sp.listener.SPItems",
+    "org.knarr.sp.listener.SPEnchantments"
+  ]
+}
