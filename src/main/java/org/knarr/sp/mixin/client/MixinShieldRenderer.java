@@ -38,7 +38,26 @@ public class MixinShieldRenderer {
         if(lvt_2_1_ instanceof ItemShieldsPlus){
             if (p_renderByItem_1_.getSubCompound("BlockEntityTag") != null) {
                 this.banner.loadFromItemStack(p_renderByItem_1_, ItemShield.getColor(p_renderByItem_1_));
-                Minecraft.getMinecraft().getTextureManager().bindTexture(BannerTextures.SHIELD_DESIGNS.getResourceLocation(this.banner.getPatternResourceLocation(), this.banner.getPatternList(), this.banner.getColorList()));
+                String base_url = "";
+                switch(((ItemShieldsPlus)lvt_2_1_).getMaterial()){
+                    case WOOD:
+                        base_url = "textures/item/shields/wooden_shield/shield_base.png";
+                        break;
+                    case STONE:
+                        base_url = "textures/item/shields/stone_shield/shield_base.png";
+                        break;
+                    case IRON:
+                        base_url = "textures/item/shields/iron_shield/shield_base.png";
+                        break;
+                    case GOLD:
+                        base_url = "textures/item/shields/gold_shield/shield_base.png";
+                        break;
+                    case DIAMOND:
+                        base_url = "textures/item/shields/diamond_shield/shield_base.png";
+                        break;
+                }
+                BannerTextures.Cache SHIELDS_PLUS_DESIGNS = new BannerTextures.Cache("shield_", new ResourceLocation(MOD_ID,base_url), "textures/entity/shield/");
+                Minecraft.getMinecraft().getTextureManager().bindTexture(SHIELDS_PLUS_DESIGNS.getResourceLocation(this.banner.getPatternResourceLocation(), this.banner.getPatternList(), this.banner.getColorList()));
             } else {
                 String texture_url = "";
                 switch(((ItemShieldsPlus)lvt_2_1_).getMaterial()){

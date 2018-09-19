@@ -50,7 +50,7 @@ public class MixinShieldEnchants {
                     }
                 }
                 if(hasReflection){
-                    float damage_coefficient = (15 + 20 * reflectionLevel) / 100F;
+                    float damage_coefficient = (25 + 20 * reflectionLevel) / 100F;
                     damageEntity.attackEntityFrom(DamageSource.MAGIC, p_attackEntityFrom_2_ * damage_coefficient);
                 }
 
